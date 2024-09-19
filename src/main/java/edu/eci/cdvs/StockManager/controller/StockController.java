@@ -1,8 +1,9 @@
 package edu.eci.cdvs.StockManager.controller;
 
+import org.springframework.web.bind.annotation.*;
+
 import edu.eci.cdvs.StockManager.entity.Product;
 import edu.eci.cdvs.StockManager.service.StockService;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;

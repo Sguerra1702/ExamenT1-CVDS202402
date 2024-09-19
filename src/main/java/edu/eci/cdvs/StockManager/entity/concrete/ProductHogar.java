@@ -5,12 +5,14 @@ import edu.eci.cdvs.StockManager.entity.Product;
 public class ProductHogar implements Product{
     private int id;
     private String nombre;
+    private int precio;
     private int cantidadDisponible;
     private String categoria;
 
-    public ProductHogar(int id, String nombre, int cantidadDisponible, String categoria) {
+    public ProductHogar(int id, String nombre,int precio, int cantidadDisponible, String categoria) {
         this.id = id;
         this.nombre = nombre;
+        this.precio = precio;
         this.cantidadDisponible = cantidadDisponible;
         this.categoria = categoria;
     }
@@ -40,4 +42,8 @@ public class ProductHogar implements Product{
         return categoria;
     }
 
+    @Override
+    public int getPrecio() {
+        return precio;
+    }
 }

@@ -7,5 +7,6 @@ public interface Product {
     public int getCantidadDisponible();
     public void setCantidadDisponible(int cantidad);
     public String getCategoria();
+    public int getPrecio();
 }
 
